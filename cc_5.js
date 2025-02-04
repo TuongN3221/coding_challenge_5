@@ -27,11 +27,17 @@ order.displayOrder();
 
 // Task 3 - Array Manipulation
 let cartItems = ["Breaking Benjamin", "Blue Oyster Cult", "Metallica"];// Declares initial array
-cartItems.push("Benjamin Franklin");
-cartItems.pop();
-cartItems.unshift("Queen");
-cartItems.shift();
-console.log(cartItems);
+cartItems.push("Benjamin Franklin");// Adds new element in the arrya
+cartItems.pop();// Removes last element in the array
+cartItems.unshift("Queen");// Adds new element at the beginning
+cartItems.shift();// Removes the first element
+console.log(cartItems);// Output is the same as the declared array
+
+// Task 4 - Map Method
+let prices = [100, 200, 300];
+let discountPrices = prices.map(price => price* 0.10);
+console.log(discountPrices);
+
 
 
 
