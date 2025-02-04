@@ -25,4 +25,14 @@ let order = {
 
 order.displayOrder();
 
+// Task 3 - Array Manipulation
+let cartItems = ["Breaking Benjamin", "Blue Oyster Cult", "Metallica"];// Declares initial array
+cartItems.push("Benjamin Franklin");
+cartItems.pop();
+cartItems.unshift("Queen");
+cartItems.shift();
+console.log(cartItems);
+
+
+
 
