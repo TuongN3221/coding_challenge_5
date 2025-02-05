@@ -1,4 +1,4 @@
-// Task 1 - Object Properties
+// Task 1 - Customer Profile
 let customer = {
     name: "John Doe",
     age: 35,
@@ -10,7 +10,7 @@ console.log(`Customer Name: ${customer.name}`);
 console.log(`Customer Age: ${customer.age}`);
 console.log(`Customer Email: ${customer.email}`);
 
-// Task 2 - Object Method
+// Task 2 - Order Details
 let order = {
     orderId: 12345,
     totalAmount: 150,
@@ -25,7 +25,7 @@ let order = {
 
 order.displayOrder();
 
-// Task 3 - Array Manipulation
+// Task 3 - Shopping Cart
 let cartItems = ["Breaking Benjamin", "Blue Oyster Cult", "Metallica"];// Declares initial array
 cartItems.push("Benjamin Franklin");// Adds new element in the arrya
 cartItems.pop();// Removes last element in the array
@@ -42,6 +42,11 @@ console.log(discountPrices);
 let inventories = [0, 13, 453, 96, 854, 0, 4, 8, 0];// declares array of inventory
 let zeroInvent = inventories.filter(inventory => inventory > 0);//Filters out products with zero stock
 console.log(zeroInvent);
+
+// Task 6 - Reduce Method
+let sales = [500, 300, 200, 400];
+let total = sales.reduce((sum, sale) => sum + sale, 0);// Reduces sales array into one value
+console.log(total);// Output: 1400
 
 
 
