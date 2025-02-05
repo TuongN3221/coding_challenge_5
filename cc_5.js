@@ -33,20 +33,22 @@ cartItems.unshift("Queen");// Adds new element at the beginning
 cartItems.shift();// Removes the first element
 console.log(cartItems);// Output is the same as the declared array
 
-// Task 4 - Map Method
+// Task 4 - Price Adjustments
 let prices = [100, 200, 300];
 let discountPrices = prices.map(price => price* 0.5);// Applies 50% discount using .map()
 console.log(discountPrices);
 
-// Task 5 - Filter Method
+// Task 5 - Product Availability
 let inventories = [0, 13, 453, 96, 854, 0, 4, 8, 0];// declares array of inventory
 let zeroInvent = inventories.filter(inventory => inventory > 0);//Filters out products with zero stock
 console.log(zeroInvent);
 
-// Task 6 - Reduce Method
+// Task 6 - Revenue Calculation
 let sales = [500, 300, 200, 400];
 let total = sales.reduce((sum, sale) => sum + sale, 0);// Reduces sales array into one value
 console.log(total);// Output: 1400
+
+
 
 
 
