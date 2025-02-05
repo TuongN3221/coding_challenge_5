@@ -35,8 +35,15 @@ console.log(cartItems);// Output is the same as the declared array
 
 // Task 4 - Map Method
 let prices = [100, 200, 300];
-let discountPrices = prices.map(price => price* 0.10);
+let discountPrices = prices.map(price => price* 0.5);// Applies 50% discount using .map()
 console.log(discountPrices);
+
+// Task 5 - Filter Method
+let inventories = [0, 13, 453, 96, 854, 0, 4, 8, 0];// declares array of inventory
+let zeroInvent = inventories.filter(inventory => inventory > 0);//Filters out products with zero stock
+console.log(zeroInvent);
+
+
 
 
 
