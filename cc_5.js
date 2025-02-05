@@ -48,8 +48,26 @@ let sales = [500, 300, 200, 400];
 let total = sales.reduce((sum, sale) => sum + sale, 0);// Reduces sales array into one value
 console.log(total);// Output: 1400
 
+// Task 7 - Customer Search
+const customers = ["Alice", "Bob", "Charlie", "David"];// Declares array of customers
 
+const charlie = customers.find(customer => customer === "Charlie");// the .find() method and === locates "Charlie"
 
+console.log(charlie);
+
+// Task 8 - Tax Declaration
+function calculateTax(amount, taxRate) {
+    const tax = amount * (taxRate / 100);
+ 
+    console.log(`Calculated tax of $${amount} at ${taxRate} is $${tax.toFixed(2)}`);
+    return tax;
+ }
+ 
+ const amount = 1000;
+ const taxRate = 8;
+ const tax = calculateTax(amount, taxRate);
+ console.log(`Tax to pay: $${tax.toFixed(2)}`);
+ 
 
 
 
