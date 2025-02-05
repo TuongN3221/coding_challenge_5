@@ -82,6 +82,16 @@ const discount = 30;
 const finalPrice = applyDiscount(price, discount);
 console.log(`Total after discount: $${finalPrice.toFixed(2)}`);
 
+// Task 10 - Loyalty Points
+const calculatePoints = (purchaseAmount) => {
+    const points = (purchaseAmount / 10);
+    console.log(`Amount Purchased: $${purchaseAmount.toFixed(2)}`);
+    console.log(`Earned Points: ${points}`);
+    return points;
+};
+
+const purchaseAmount = 500
+const totalPoints = calculatePoints(purchaseAmount);
 
 
 
