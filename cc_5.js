@@ -67,7 +67,20 @@ function calculateTax(amount, taxRate) {
  const taxRate = 8;
  const tax = calculateTax(amount, taxRate);
  console.log(`Tax to pay: $${tax.toFixed(2)}`);
- 
+
+ // Task 9 - Discount Application
+ const applyDiscount = function (price, discount) {
+    // calculates the price to apply discount
+    const discountedPrice = price - (price * (discount / 100));
+    
+    console.log(`Original Price: $${price} and with a ${discount}% will be $${discountedPrice.toFixed(2)}`);
+    return discountedPrice;
+};
+
+const price = 4000;
+const discount = 30;
+const finalPrice = applyDiscount(price, discount);
+console.log(`Total after discount: $${finalPrice.toFixed(2)}`);
 
 
 
